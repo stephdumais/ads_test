@@ -1,0 +1,75 @@
+body {
+    font-family: 'Signika Negative';
+    background: #fff;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #app {
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardgrid {
+      width:100%;
+      max-width:1300px;
+      font-size:30px;
+      line-height: 1.5;
+      border-collapse: collapse;
+      @media screen and (min-width: 769px) {
+        table-layout: fixed;
+      }
+
+      thead {
+
+          th {    
+            height:280px; 
+            background-color: #f5f5f5;     
+            border: 15px solid #fff;
+            vertical-align: bottom;
+
+            &:not(:first-child){
+                width:46px;
+            }
+
+            &:first-child{
+                background-image:url(/dist/images/logo.png);  
+                background-size: contain;
+                background-repeat:no-repeat;
+                background-position: center;
+                background-color:#f5f5f5;
+            }
+
+            span {
+                padding:10px 0 0 0;
+                color:#000;
+                display:block;
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+            }
+          }
+      }
+
+      tbody {
+          th,td {
+            height:46px;
+            background-color:#e4e4e4;
+            color:#000;
+            text-align: left;
+            border: 15px solid #fff;
+            padding:0 10px;
+          }
+
+          td {
+              cursor:pointer;
+
+              &.active {
+                  background-color:#0872ba;
+              }
+          }
+      }
+  }

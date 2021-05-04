@@ -1,0 +1,67 @@
+body {
+  font-family: "Signika Negative";
+  background: #fff;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cardgrid {
+  width: 100%;
+  max-width: 1300px;
+  font-size: 30px;
+  line-height: 1.5;
+  border-collapse: collapse;
+}
+@media screen and (min-width: 769px) {
+  .cardgrid {
+    table-layout: fixed;
+  }
+}
+.cardgrid thead th {
+  height: 280px;
+  background-color: #f5f5f5;
+  border: 15px solid #fff;
+  vertical-align: bottom;
+}
+.cardgrid thead th:not(:first-child) {
+  width: 46px;
+}
+.cardgrid thead th:first-child {
+  background-image: url(/logo.c5debfde.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f5f5;
+}
+.cardgrid thead th span {
+  padding: 10px 0 0 0;
+  color: #000;
+  display: block;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+.cardgrid tbody th, .cardgrid tbody td {
+  height: 46px;
+  background-color: #e4e4e4;
+  color: #000;
+  text-align: left;
+  border: 15px solid #fff;
+  padding: 0 10px;
+}
+.cardgrid tbody td {
+  cursor: pointer;
+}
+.cardgrid tbody td.active {
+  background-color: #0872ba;
+}
+
+/*# sourceMappingURL=/style.082fdd9f.css.map */
